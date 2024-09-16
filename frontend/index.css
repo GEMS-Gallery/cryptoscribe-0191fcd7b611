@@ -1,10 +1,11 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Comic Neue', cursive;
     line-height: 1.6;
     color: #333;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #FFF9C4;
 }
 
 header {
@@ -12,46 +13,57 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
     font-size: 2.5em;
     margin: 0;
+    color: #FFEB3B;
+    text-shadow: 2px 2px #333;
 }
 
 button {
-    background-color: #1a8917;
+    background-color: #F44336;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #0f730c;
+    background-color: #D32F2F;
+    transform: scale(1.05);
 }
 
 #postForm {
-    background-color: #f9f9f9;
+    background-color: #81C784;
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 input, #body {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #4CAF50;
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Comic Neue', cursive;
 }
 
 #body {
     min-height: 200px;
     overflow-y: auto;
+    background-color: white;
 }
 
 #body[placeholder]:empty:before {
@@ -61,13 +73,18 @@ input, #body {
 
 .post {
     margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 3px solid #4CAF50;
     padding-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .post h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: #4CAF50;
 }
 
 .post-meta {
@@ -79,4 +96,11 @@ input, #body {
 .post-body {
     font-size: 1.1em;
     line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #4CAF50;
+    font-weight: bold;
 }
